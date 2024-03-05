@@ -2,7 +2,7 @@
 include('database.php');
 $obj=new query();
 
-//code for delete
+//code for deleting
 if(isset($_GET['type']) && $_GET['type']=='delete'){
    $id=$obj->get_safe_str($_GET['id']);
    $condition_arr=array('id'=>$id);
